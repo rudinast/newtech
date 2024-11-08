@@ -1,6 +1,5 @@
 from datetime import datetime
 
-
 def get_data_by_date(data: dict, target_date: datetime) -> float:
     """
     Возвращает данные для указанной даты. Если данных для этой даты нет, возвращает None.

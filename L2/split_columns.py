@@ -1,19 +1,10 @@
 import os
-import pandas as pd
 
-# Константы
+from manage_data import load_csv, create_directory
+
 CSV_SEP = ';'
 CSV_ENCODING = 'utf-8-sig'
 OUTPUT_DIRECTORY = 'Lab_2_tmpFiles'
-
-def create_directory(directory_name: str) -> None:
-    """Создает директорию, если она не существует."""
-    if not os.path.exists(directory_name):
-        os.makedirs(directory_name)
-
-def load_csv(filename: str) -> pd.DataFrame:
-    """Загружает CSV файл и возвращает DataFrame."""
-    return pd.read_csv(filename, sep=CSV_SEP, encoding=CSV_ENCODING)
 
 def split_csv_by_columns(input_filename: str, output_directory: str = OUTPUT_DIRECTORY) -> None:
     """

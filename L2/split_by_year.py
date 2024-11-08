@@ -1,18 +1,11 @@
 import os
 import pandas as pd
 
+from manage_data import load_csv, create_directory
+
 # Константы
 CSV_SEP = ';'
 CSV_ENCODING = 'utf-8-sig'
-
-def create_directory(directory_name: str) -> None:
-    """Создает директорию, если она не существует."""
-    if not os.path.exists(directory_name):
-        os.makedirs(directory_name)
-
-def load_csv(filename: str) -> pd.DataFrame:
-    """Загружает CSV файл и возвращает DataFrame."""
-    return pd.read_csv(filename, sep=CSV_SEP, encoding=CSV_ENCODING)
 
 def split_dataset_by_years(input_filename: str, output_directory: str = 'Lab_2_tmpFiles/Year') -> None:
     """
