@@ -3,7 +3,7 @@
 
 ## Overview
 
-This repository includes four Python-based projects that progressively build a comprehensive pipeline for currency exchange rate data processing, analysis, visualization, and user-friendly interaction through a GUI application.
+This repository includes five Python-based projects that progressively build a comprehensive pipeline for currency exchange rate data processing, analysis, visualization, testing, deployment, and user-friendly interaction through a GUI application.
 
 ## Labs Summary
 
@@ -44,6 +44,20 @@ Analyzes USD exchange rate data, providing tools for preprocessing, visualizatio
    - Monthly averages of the USD exchange rate.
    - Filters data by deviation thresholds and date ranges.
 
+### Lab 5: Testing, Deployment, and Documentation
+Extends the USD analysis application with unit testing, multiple deployment options, and comprehensive documentation.
+
+**Features**:
+1. **Unit Testing**:
+   - Positive, negative, and exceptional scenarios using `pytest`.
+2. **Deployment**:
+   - Local execution with Python or Docker.
+   - `exe` generation for Windows using `pyqtdeploy`.
+   - Easy execution with `.bat` scripts.
+3. **Documentation**:
+   - Detailed README and inline docstrings.
+   - User guide and setup instructions.
+
 ## Installation and Setup
 
 **Requirements**:
@@ -76,7 +90,8 @@ pip install -r requirements.txt
 - **Lab 2**: Run `python main.py` to process CSV data.
 - **Lab 3**: Run `python main_window.py` to launch the GUI application.
 - **Lab 4**: Run `python main.py` to analyze exchange rates, generate statistics, and visualize data.
+- **Lab 5**: Execute `pytest` for unit tests, and use .bat scripts or Docker for deployment.
 
 ## Conclusion
 
-These projects showcase Python's capabilities in data collection, processing, analysis, visualization, and GUI integration, providing a complete pipeline from raw exchange rate data to actionable insights and interactive tools.
+These projects showcase Python's capabilities in data collection, processing, analysis, visualization, GUI integration, testing, and deployment providing a complete pipeline from raw exchange rate data to actionable insights and interactive tools.
