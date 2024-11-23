@@ -3,7 +3,7 @@
 
 ## Overview
 
-This repository includes three Python-based projects focusing on currency exchange rate data processing. Each project builds upon the previous one, culminating in a GUI application for user-friendly interaction.
+This repository includes four Python-based projects that progressively build a comprehensive pipeline for currency exchange rate data processing, analysis, visualization, and user-friendly interaction through a GUI application.
 
 ## Labs Summary
 
@@ -30,11 +30,25 @@ Adds a GUI using `PySide6` for interacting with data processing functions from L
 - Generates annotation files.
 - Retrieves data by user-specified dates.
 
+### Lab 4: USD Analysis Tool
+Analyzes USD exchange rate data, providing tools for preprocessing, visualization, and statistical analysis.
+
+**Features**:
+1. **Data Preprocessing**:
+   - Handles missing values by replacing them with the median.
+   - Adds deviation columns for more in-depth analysis.
+2. **Visualization**:
+   - Line plots, histograms, and scatter plots for detailed insights.
+   - Highlights mean and median values.
+3. **Statistical Analysis**:
+   - Monthly averages of the USD exchange rate.
+   - Filters data by deviation thresholds and date ranges.
+
 ## Installation and Setup
 
 **Requirements**:
 - **Python 3.9+**
-- **Dependencies**: `pandas`, `requests`, `PySide6`
+- **Dependencies**: `pandas`, `requests`, `PySide6`, `matplotlib`
 
 ### Installation
 **Local**:
@@ -61,7 +75,8 @@ pip install -r requirements.txt
 - **Lab 1**: Run `python main.py` to fetch and save exchange rates.
 - **Lab 2**: Run `python main.py` to process CSV data.
 - **Lab 3**: Run `python main_window.py` to launch the GUI application.
+- **Lab 4**: Run `python main.py` to analyze exchange rates, generate statistics, and visualize data.
 
 ## Conclusion
 
-These projects demonstrate data fetching, processing, and GUI integration for currency exchange rates, showcasing Python's capabilities in handling CSV data and building interactive applications.
+These projects showcase Python's capabilities in data collection, processing, analysis, visualization, and GUI integration, providing a complete pipeline from raw exchange rate data to actionable insights and interactive tools.
