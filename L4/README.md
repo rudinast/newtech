@@ -64,6 +64,7 @@ This project analyzes USD exchange rate data, providing tools for preprocessing,
 - `visualization.py` - Functions for data visualization.
 - `data_processing.py` - Functions for preprocessing and filtering data.
 - `main.py` - Entry point for the application.
+- `colab/` - Contains a single file with all the code for easy testing in [Google Colab](https://colab.research.google.com/).
 
 ---
 
