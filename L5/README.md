@@ -36,6 +36,7 @@ This lab extends the USD analysis application with unit testing.
   - `pandas`
   - `matplotlib`
   - `pytest`
+  - `PySide6`
 
 ---
 
@@ -68,6 +69,22 @@ This lab extends the USD analysis application with unit testing.
    python main.py
    ```
 
+### Docker Troubleshooting
+
+Ensure X11 forwarding is correctly configured for GUI-based Qt applications:
+
+1. Generate `.Xauthority` file
+   ```bash
+   xauth nlist $DISPLAY | sed -e 's/^..../ffff/' | xauth -f /tmp/.docker.xauth nmerge -
+   ```
+2. Update permissions:
+   ```bash
+   chmod 777 /tmp/.docker.xauth
+   ```
+3. Verify DISPLAY is exported:
+   ```bash
+   echo $DISPLAY
+   ```
 ---
 
 ### Deployment Options
@@ -141,11 +158,11 @@ pytest
 
 ## File Structure
 
-- `analysis.py` — Functions for statistical analysis.
-- `data_processing.py` — Data preprocessing and filtering.
+- `data_manager.py` — Handles data preprocessing and filtering.
 - `visualization.py` — Data visualization.
+- `ui_builder.py` — Defines the GUI layout and components.
 - `main.py` — Entry point for the application.
-- `tests/` — Contains unit tests.
+- `test_*` — Unit tests.
 - `requirements.txt` — Lists required dependencies.
 - `Dockerfile` — Defines the Docker image.
 - `docker-compose.yml` — Orchestrates Docker containers.
