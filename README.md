@@ -58,11 +58,24 @@ Extends the USD analysis application with unit testing, multiple deployment opti
    - Detailed README and inline docstrings.
    - User guide and setup instructions.
 
+### Lab 6: Data Analysis. Working with Model Download. Classification and Forecasting Task
+Extends the USD analysis application with unit testing, multiple deployment options, and comprehensive documentation.
+
+**Features**:
+1. **Model training**:
+   - Deviding data on forecast and test.
+   - Training model.
+2. **Using SARIMAX**
+   - Using SARIMAX model for forecasting.
+3. **Documantation**
+   - Documenting results of changing SARIMAX hyperparameters.
+   - Analyzing results for the best set of parameters.
+
 ## Installation and Setup
 
 **Requirements**:
 - **Python 3.9+**
-- **Dependencies**: `pandas`, `requests`, `PySide6`, `matplotlib`
+- **Dependencies**: `pandas`, `requests`, `PySide6`, `matplotlib`, `statsmodels.tsa.statespace.sarimax`
 
 ### Installation
 **Local**:
